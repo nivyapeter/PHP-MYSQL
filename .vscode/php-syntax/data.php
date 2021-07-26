@@ -5,7 +5,10 @@
 <h1>My first PHP page</h1>
 
 <?php
-echo "Hello World!";
+$color1 = "green";
+$color2 = "red";
+echo "Hello World!" .$color1 ."<br>";
+echo "Hello world!" .$color2 ."<br>";
 ?>
 
 </body>
