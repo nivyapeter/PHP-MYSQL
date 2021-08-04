@@ -11,7 +11,7 @@ class Thesaurus
     public function getSynonyms($word)
     {
         
-       $synonims = (!empty($this->thesaurus[$word]) ? $this->thesaurus[$word] : array());
-       return json_encode(array('word'=>$word,'synonyms'=>$synonims));
+      $synonims = (!empty($this->thesaurus[$word]) ? $this->thesaurus[$word] : array());
+      return json_encode(array('word'=>$word,'synonyms'=>$synonims));
     }
 }
