@@ -8,3 +8,4 @@ fwrite($file, "Learn JAVA \n");
 echo "file written successfully ";
 
 fclose($file);
+?>
