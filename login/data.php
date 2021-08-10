@@ -10,7 +10,7 @@
   <body>
 
 <h2>Welcome to Online Exam</h2>
-<a class="atext" href="question.php" action="question.php" method="POST">click here to start<i class='fas fa-arrow-right'></i></a>
+<a class="atext" href="questionform.php" action="questionform.php" method="POST">click here to start<i class='fas fa-arrow-right'></i></a>
 
 <?php
 /**

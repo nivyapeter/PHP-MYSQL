@@ -18,6 +18,10 @@ body {
   color:blue;
   text-decoration: underline;
 }
+.h3 {
+  height:88vh;
+  font-size:16px;
+}
 .container {
   border:1px solid black;
 }
@@ -40,4 +44,13 @@ body {
   font-size: 12px;
   margin-left:1rem;
   color:blue;
+}
+.container1 {
+  height:500vh;
+  border:1px solid black;
+  padding:20px;
+}
+.options {
+  font-size:16px;
+  margin-top:12px;
 }

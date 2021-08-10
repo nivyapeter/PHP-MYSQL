@@ -1,3 +1,4 @@
+
 <?php
 /**
  * create database connection
@@ -27,35 +28,35 @@
 
  //mysql query to create  table
 
- $mysql_query_statement = "CREATE TABLE question1 (
-	qid INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	question VARCHAR(150) NOT NULL,
-	answer VARCHAR(50) NOT NULL
-)";
-if ($conn->query($mysql_query_statement)==TRUE){
-  echo "table question1 created successfully.";
-}
-else {
-  echo "Error creating table: " . $conn->error;
-}
-//connection close 
-mysqli_close($conn);
+//  $mysql_query_statement = "CREATE TABLE question1 (
+// 	qid INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+// 	question VARCHAR(150) NOT NULL,
+// 	answer VARCHAR(50) NOT NULL
+// )";
+// if ($conn->query($mysql_query_statement)==TRUE){
+//   echo "table question1 created successfully.";
+// }
+// else {
+//   echo "Error creating table: " . $conn->error;
+// }
+// //connection close 
+// mysqli_close($conn);
 
 
-?>
+// ?>
 <?php
 
 /**
  * insert data into table
  */
 
- //mysql wuery to insert record tnto table
+ //mysql query to insert record tnto table
 
 
  $mysql_query_statement = "INSERT INTO question1 (question,answer)
-	VALUES ('Ram', 'Ram@123'),
-	('Sanjay', 'Sanjay@123'),
-	('Pankit', 'Pankit@123')";
+	VALUES ('What does PHP stand for?', 'Hypertext Preprocessor'),
+	('All variables in PHP start with which symbol?', '$'),
+	('What is the correct way to end a PHP statement?', ';')";
   $result = $conn->query($mysql_query_statement);
   // if ($result === TRUE) {
   //   echo "Records inserted successfully.";
@@ -65,4 +66,8 @@ mysqli_close($conn);
   // }
   //connection close
   mysqli_close($conn);
+  
+
   ?>
+
+  
