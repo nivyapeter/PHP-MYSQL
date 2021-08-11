@@ -7,18 +7,20 @@
     <title>Login form</title>
   </head>
   <body>
-    <h1>LOGIN FORM</h1>
+   
+      <h1>Login Form</h1>
+   
   <div class="container">
    <form class="form-control" action="data.php" method = "POST">
   <div>
    <label>Username:</label>
-   <input class="input-form" type="text" required>
+   <input class="input-form" type="text" name="user">
    </div>
    <div>
    <label>Password:</label>
-   <input class="input-form" type="password" required>
+   <input class="input-form" type="password" name ="pass">
    </div>
-   <button class="btn" type= "submit">Login</button>
+   <button class="button" type= "submit">Login</button>
 
  </form>
 

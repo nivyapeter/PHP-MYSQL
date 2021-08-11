@@ -41,6 +41,7 @@
      <div class="options">
        <input type="radio"> %
      </div>
+     <button class="btn btn-block btn-primary my-5" type= "submit">Submit</button>
    </form>
 
 
