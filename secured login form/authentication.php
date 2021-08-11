@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php      
     include('connection.php');  
     $username = $_POST['user'];  
@@ -15,9 +17,16 @@
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  
-            // echo "<h1><center> Login successful </center></h1>";  
+            echo "<h1> Hai welcome!!!</h1>";  
+            
+          
         }  
         else{  
             echo "<h1> Login failed. Invalid username or password.</h1>";  
         }     
-?>  
+?> 
+ 
+  <a href="submit.php">
+     <input type="submit" value="submit" <?php if ($count != '1'){ ?> disabled <?php   } ?> onclick="submit(<?php ?>)"/>
+</body>
+</html>
