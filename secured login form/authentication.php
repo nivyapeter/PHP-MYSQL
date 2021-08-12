@@ -27,6 +27,7 @@
 ?> 
  
   <a href="submit.php">
-     <input type="submit" value="submit" <?php if ($count != '1'){ ?> disabled <?php   } ?> onclick="submit(<?php ?>)"/>
-</body>
+     
+     <input  type='submit' id='submitbtn' name='start' value='START' class='submit_btn' <?php if(mysqli_num_rows($result)!=1) echo 'style="display:none"';?>>
+    </body>
 </html>
