@@ -1,0 +1,34 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background-color:lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  overflow-y:scroll;
+  color:brown;
+  
+}
+
+#frm{  
+  border: solid gray 1px;  
+  width:25%;  
+  border-radius: 2px;  
+  margin: 120px auto;  
+  background: white;  
+  padding: 50px;  
+}  
+#btn{  
+  color: #fff;  
+  background: #337ab7;  
+  padding: 7px;  
+  margin-left: 70%;  
+}  
