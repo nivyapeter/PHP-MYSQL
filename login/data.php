@@ -24,7 +24,7 @@
   
   if(isset($POST['username']) && isset($_POST['password']))
   {
-    $username = $_POST['username'];
+    // $username = $_POST['username'];
     $password = $_POST['password'];
     if (empty($username)) {
       header("Location: login.php:error=username is required");
