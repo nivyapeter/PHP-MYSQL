@@ -6,5 +6,6 @@ function unique_names(array $array1, array $array2) : array
     return ($ab);
 }
 
+
 $names = unique_names(['Ava', 'Emma', 'Olivia'], ['Olivia', 'Sophia', 'Emma']);
 echo join(', ', $names); // should print Emma, Olivia, Ava, Sophia
