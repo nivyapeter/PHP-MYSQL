@@ -16,5 +16,5 @@ else {
   print_r($decoded);
 }
 
-
+curl_close($ch);
 ?>
