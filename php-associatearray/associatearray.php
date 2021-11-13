@@ -2,9 +2,9 @@
 <html>
 <body>
 <form action= "associatearray.php" method="post">
-  <!-- <input type="text" name="student">
+  <input type="text" name="student">
   
-   <input type="submit"> -->
+   <input type="submit">
  </form>
  <?php 
  $grades = array("jim" => "A+","Oscar" =>"B+","sonu" => "C+");
