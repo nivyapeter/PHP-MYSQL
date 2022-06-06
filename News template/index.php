@@ -22,13 +22,17 @@
                     <li class="nav-items">
                        <a href="#">Contact</a>
                     </li>
-               </nav>
+               </ul>
            </nav>   
         </div>
+    </header>
+   <section id="banner">
+       <div class="col-md-12 col-sm-12 col-xs-12 banner-section" id="banner-page">
         
-   </header>
-       
-   </div>
+       </div>
+
+   </section>
+   
     
 
   </body>
