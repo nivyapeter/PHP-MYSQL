@@ -47,7 +47,7 @@
         appends this to your internal scripting query string, and makes it the Last rewrite rule executed.
         
     ```
-# Create a wordpress site in new ec2 machine
+# Clone a wordpress site to new ec2 machine
   ## 1. Create a new EC2 instance 
 
     - Step 1: Login to AWS Mangement Console and Open EC2
