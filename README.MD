@@ -149,19 +149,19 @@
     - Step 1: Login to production server
     - Step 2: Create a backup of present database and and the existing code in the server
     - Step 3: Create a datadumb from the server
-              - mysqldump -u entomoUser -p entomo > entomo_db_staging_3105.sql
+              - mysqldump -u testUser -p test > test_db_staging_3105.sql
     - Step 4: Logout the server and from our local machine (copy the dumb from production server to local machine)
-              - sudo scp -i  /home/entomo-server-key/website_prod.pem -r ubuntu@54.254.17.77:/home/entomo_db_staging_3105.sql /home/
+              - sudo scp -i  /home/test-server-key/website_prod.pem -r ubuntu@54.254.17.77:/home/test_db_staging_3105.sql /home/
     - Step 5: copy the file from local machine to new ec2 machine
-              - sudo scp /home/nivya/entomo-test-server.pem /home/entomo_db_staging_3105.sql ubuntu@43.204.224.234:~/
+              - sudo scp /home/nivya/test-test-server.pem /home/test_db_staging_3105.sql ubuntu@43.204.224.234:~/
     - Step 6: Update the content inside datadumb
-              - sed -i -e 's/entomo.co/43.204.224.234/g' entomo_db_staging_3105.sql 
+              - sed -i -e 's/test.co/43.204.224.234/g' test_db_staging_3105.sql 
               Update the URL 
-              - sed -i -e 's/http:\/\/entomo.co/https:\/\/43.204.224.234/g' entomo_db_staging_3105.sql 
+              - sed -i -e 's/http:\/\/test.co/https:\/\/43.204.224.234/g' test_db_staging_3105.sql 
     - Step 7: Validate everything is updated using grep
-              - cat entomo_db_staging_3105.sql | grep 'https://43.204.224.234'
+              - cat test_db_staging_3105.sql | grep 'https://43.204.224.234'
     - Step 8: Import the datadump to the server
-              - mysql -u root -p sampledb < entomo_db_staging_3105.sql
+              - mysql -u root -p sampledb < test_db_staging_3105.sql
     - Step 9: update the site url and home url in wp_options table database
               - update wp_options set option_value = 'http://43.204.224.234' where option_id=1;
               - update wp_options set option_value = 'http://43.204.224.234' where option_id=2;
