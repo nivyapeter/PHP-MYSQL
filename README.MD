@@ -297,5 +297,5 @@
          
      - once have completed this steps log in again  
     
-       Reff: https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/
+       Ref: https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/
         
