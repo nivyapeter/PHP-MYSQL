@@ -270,5 +270,32 @@
     - To check
         https://43.204.224.234
 
+  
+
 
   
+  #  Enable WordPress Multisite Network
+     
+     - A WordPress Multisite network allows you to run and manage multiple WordPress sites or blogs 
+       from a single WordPress installation
+     - To enable Multisite, add the following code to wo-config.php file
+       
+         /* Multisite */
+         define( 'WP_ALLOW_MULTISITE', true );
+     - Once enabled need to set up the multisite network
+
+     - In wordpress dashboard Tools -> Network setup 
+     - The next thing you need to do is to tell wordpress what kind of domain structure you will be using 
+       eg:subdomains or sub-directories
+
+     - Click on the install button to continue.
+     - WordPress will now show you some code that you need to add to your wp-config.php and
+      .htaccess file respectively.
+     - sudo vi wp-config.php 
+
+  ![My Image](/images/networksetup2.png)
+         
+     - once have completed this steps log in again  
+    
+       Reff: https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/
+        
